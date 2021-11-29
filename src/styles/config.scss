@@ -1,0 +1,19 @@
+$button-rust: #EF476F;
+$button-golang: #06D6A0;
+$button-react: #118AB2;
+$button-angular: #C742DD;
+$button-node: #FFD166;
+
+$desktop-width: 1024px;
+
+@mixin mobile() {
+  @media (max-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}

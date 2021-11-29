@@ -1,0 +1,84 @@
+@import '../../styles/config.scss';
+
+.lang__buttons {
+  display: flex;
+  justify-content: center;
+  font-family: inherit;
+  margin-bottom: 90px;
+  flex-wrap: wrap;
+
+  .lang__button {
+    font-family: inherit;
+    font-size: 16px;
+    border: 2px solid;
+    border-radius: 4px;
+    color: black;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-color: black;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    margin: 8px;
+
+    &.active,
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+
+    &.Rust {
+      border-color: $button-rust;
+      color: $button-rust;
+
+      &.active,
+      &:hover {
+        background-color: $button-rust;
+        color: #fff;
+      }
+    }
+
+    &.React {
+      border-color: $button-react;
+      color: $button-react;
+
+      &.active,
+      &:hover {
+        background-color: $button-react;
+        color: #fff;
+      }
+    }
+
+    &.Go {
+      border-color: $button-golang;
+      color: $button-golang;
+
+      &.active,
+      &:hover {
+        background-color: $button-golang;
+        color: #fff;
+      }
+    }
+
+    &.Node {
+      border-color: $button-node;
+      color: $button-node;
+
+      &.active,
+      &:hover {
+        background-color: $button-node;
+        color: #fff;
+      }
+    }
+
+    &.Angular {
+      border-color: $button-angular;
+      color: $button-angular;
+
+      &.active,
+      &:hover {
+        background-color: $button-angular;
+        color: #fff;
+      }
+    }
+  }
+}

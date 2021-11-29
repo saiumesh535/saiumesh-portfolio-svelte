@@ -1,0 +1,37 @@
+
+@import '../../styles/config.scss';
+
+.header {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+  }
+}
+
+.links {
+  a {
+    padding: 10px 0px;
+    color: black;
+    font-size: 22px;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+    transition: all 0.3s ease;
+  }
+
+  a:hover {
+    // text-decoration: underline;
+    opacity: 0.5;
+  }
+}
+
+@include mobile {
+  .header {
+    padding: 10px 15px;
+  }
+}
