@@ -1,0 +1,107 @@
+@import "../../styles/config.scss";
+
+.repos {
+    background-color: #ffffff;
+
+    .displaced {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -50px;
+    }
+
+    .repo {
+        padding: 0 10px;
+        background-size: 100% 45px;
+        background-repeat: no-repeat;
+        width: 260px;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+        -webkit-animation-name: animatebottom;
+        -webkit-animation-duration: 2s;
+        animation-name: animatebottom;
+        animation-duration: 2s;
+        margin: 10px;
+        transition: box-shadow 0.3s cubic-bezier(0.77, 0, 0.18, 1);
+
+        &:hover {
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            margin: 0;
+            padding: 10px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+}
+
+.lang__tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+
+    .lang__tag {
+        padding: 4px 8px;
+        text-transform: uppercase;
+        border-radius: 30px;
+        background-color: rgba($color: $button-rust, $alpha: 0.2);
+        font-size: 12px;
+        font-weight: bold;
+        color: $button-rust;
+
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        &.Rust {
+            background-color: rgba($color: $button-rust, $alpha: 0.2);
+            color: $button-rust;
+        }
+
+        &.React {
+            background-color: rgba($color: $button-react, $alpha: 0.2);
+            color: $button-react;
+        }
+
+        &.Go {
+            background-color: rgba($color: $button-golang, $alpha: 0.2);
+            color: $button-golang;
+        }
+
+        &.Node {
+            background-color: rgba($color: $button-node, $alpha: 0.2);
+            color: $button-node;
+        }
+
+        &.Angular {
+            background-color: rgba($color: $button-angular, $alpha: 0.2);
+            color: $button-angular;
+        }
+    }
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -50px;
+        opacity: 0;
+    }
+    to {
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+@keyframes animatebottom {
+    from {
+        bottom: -50px;
+        opacity: 0;
+    }
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
