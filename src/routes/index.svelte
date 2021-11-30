@@ -5,3 +5,7 @@
 <div class="App">
 	<Home />
 </div>
+
+<style global lang="scss">
+	@import './app.scss';
+</style>
