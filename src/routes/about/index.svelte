@@ -1,9 +1,7 @@
 <script lang="ts">
     import './about.scss';
-    import Header from '../../components/header/header.svelte';
 </script>
 
-<Header />
 
 <div class="about">
 	<h1>About me</h1>
