@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { currentSelectedLang } from '../../store/store';
 	import { Langs, getLangs } from '../../utils/app.utils';
-	import './lang-buttons.scss';
 	import LangButton from './langbutton.svelte';
 	let langs: Langs[] = getLangs();
 	export let currentLang: string = 'All';
@@ -20,3 +19,7 @@
 		/>
 	{/each}
 </div>
+
+<style global lang="scss">
+	@import './lang-buttons.scss';
+</style>

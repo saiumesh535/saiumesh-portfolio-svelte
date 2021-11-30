@@ -1,8 +1,3 @@
-<script lang="ts">
-    import './header.scss';
-</script>
-
-
 <div class="header">
 	<div class="logo">
 		<a href={`/`}>
@@ -13,3 +8,7 @@
 		<a href={`/about`}>About me</a>
 	</div>
 </div>
+
+<style global lang="scss">
+	@import './header.scss';
+</style>

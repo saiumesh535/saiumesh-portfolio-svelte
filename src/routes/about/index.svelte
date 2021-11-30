@@ -1,8 +1,3 @@
-<script lang="ts">
-    import './about.scss';
-</script>
-
-
 <div class="about">
 	<h1>About me</h1>
 	<div class="about__me__card">
@@ -34,3 +29,7 @@
 		</p>
 	</div>
 </div>
+
+<style global lang="scss">
+	@import './about.scss';
+</style>

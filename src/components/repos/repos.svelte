@@ -1,11 +1,9 @@
 <script lang="ts">
-	import { onMount, onDestroy } from 'svelte';
+	import { onMount } from 'svelte';
 	import { getReps } from '../../utils/app.utils';
 	import Repo from './repo.svelte';
 	export let repos = getReps();
-    import './repo.scss';
-import { currentSelectedLang } from '../../store/store';
-
+	import { currentSelectedLang } from '../../store/store';
 
 	onMount(() => {
 		currentSelectedLang.subscribe((repo) => {
@@ -14,9 +12,8 @@ import { currentSelectedLang } from '../../store/store';
 			} else {
 				repos = getReps().filter((rep) => rep.langs.includes(repo));
 			}
-		})
+		});
 	});
-
 </script>
 
 <div class="repos">
@@ -26,3 +23,7 @@ import { currentSelectedLang } from '../../store/store';
 		{/each}
 	</div>
 </div>
+
+<style global lang="scss">
+	@import './repo.scss';
+</style>
