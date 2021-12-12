@@ -2,8 +2,10 @@
 	import { currentSelectedLang } from '../../store/store';
 	import { Langs, getLangs } from '../../utils/app.utils';
 	import LangButton from './langbutton.svelte';
+	
 	let langs: Langs[] = getLangs();
 	export let currentLang: string = 'All';
+	
 	function onLangClick(lang: string) {
 		currentLang = lang;
 		currentSelectedLang.set(lang);
